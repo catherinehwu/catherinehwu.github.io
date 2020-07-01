@@ -1,0 +1,233 @@
+html {
+	min-width: 850px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: normal;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	position: fixed;
+	min-width: inherit;
+	width: 100%;
+	z-index: 2;
+}
+
+nav ul {
+	overflow: hidden;
+	overflow-wrap: wrap;
+	background-color: rgba(37, 50, 55);
+	color: white;
+	height: inherit;
+	padding: 0 0;
+	margin: 0 0;
+}
+
+nav li {
+	float: left;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase; 
+	height: 50px;
+}
+
+nav a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+nav li:hover {
+	color: white;
+	font-weight: 900;
+}
+
+.logo {
+	float: right;
+}
+
+.logo:hover {
+	background-color: inherit;
+	color: rgba(224, 251, 252, 1);
+}
+
+@media screen and (max-width: 1050px) {
+	.logo {
+		float: left;
+	}
+}
+
+header {
+
+	height: 400px;
+	background-color: rgba(224, 251, 252, 0.5);
+	margin: 0 0;
+	position: relative;
+	clear: both;
+	display: flex;
+	border-bottom: 7px solid rgb(92, 107, 115);
+}
+
+footer {
+	background-color: rgba(157, 180, 192, 1);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 100px;
+	color: black;
+	text-transform: uppercase;
+	display: block;
+	margin: auto;
+	z-index: 1;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 36px;
+	color: black;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	padding-bottom: 5px;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(100, 100, 100, 1);
+	padding-bottom: 10px;
+}
+
+p, li, a {
+	font-size: 18px;
+	line-height: 125%;
+}
+
+hr.solid {
+	border-bottom: 5px solid black;
+	border-top: 5px solid black;
+}
+
+footer p {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/* Copyright Mark Footer */
+.mark {
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.buffer {
+	overflow: hidden;
+	overflow-wrap: wrap;
+	padding: 0 0;
+	margin: 0 0;
+	z-index: 1;
+}
+
+.buffer li {
+	float: left;
+	display: inline-block;
+	height: 35px;
+}
+
+.about-section {
+	position: relative;
+	padding: 40px 40px;
+}
+
+#profile {
+	min-width: 400px;
+	max-width: 600px;
+	width: 40%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	object-fit: contain;
+}
+
+.blurb {
+	display: inline-block;
+	width: 500px;
+	font-size: 24px;
+	padding: 20px 20px;
+} 
+
+.contactinfo {
+	padding: 10px 0;
+}
+
+.contactinfo img {
+	display: inline-block;
+	padding: 0 10px;
+	width: 70px;
+	height: 50px;
+}
+
+.banner {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100%;
+}
+
+.banner:before {
+	content: "";
+  	position: absolute;
+  	left: 0; right: 0;
+  	top: 0; bottom: 0;
+  	background-color: rgba(224, 251, 252, 0.50);
+}
+
+.airplane {
+	background-image: url("../assets/banner/airplaneBanner.jpg");
+	background-size: 100% auto;
+}
+
+.berkeley {
+	background-image: url("../assets/banner/berkeleyBanner.jpg");
+}
+
+.contact {
+	background-image: url("../assets/banner/contactBanner.png");
+}
+
+.triangle {
+	background-image: url("../assets/banner/colorBanner.jpeg");
+}
+
+.geometric {
+	background-image: url("../assets/banner/diagBanner.jpg");
+	background-size: 100% 100%;
+}
+
+.star {
+	background-image: url("../assets/banner/starBanner.jpg");
+}

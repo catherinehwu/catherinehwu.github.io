@@ -1,0 +1,47 @@
+.coursework-container {
+	margin: 40px 40px;
+}
+
+.course-type {
+	margin-bottom: 40px;
+	padding: 20px 20px;
+	background-color: rgba(194, 223, 227, 0.75);
+}
+
+.course-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.course-item {
+	margin-top: 10px;
+	margin-right: 30px;
+	padding: 40px 20px;
+	background-color: rgba(255,255,255,1);
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.course-link {
+	width: 100%;
+	margin-top: 10px;
+	padding: 20px 0;
+	background-color: rgba(157, 180, 192, 1);
+	text-align: center;
+	color: black;
+}
+
+.course-link:hover {
+	background-color: rgba(92, 107, 115,1);
+	color: white;
+}
+
+.course-link p, a {
+	text-decoration: none !important;
+	color: inherit;
+	font-style: normal;
+	margin-top: 0;
+}

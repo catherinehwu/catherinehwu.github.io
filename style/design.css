@@ -1,0 +1,109 @@
+.design-container {
+	margin: 40px 40px;
+}
+
+.design-type {
+	margin-bottom: 20px;
+	padding: 20px 20px;
+	background-color: rgba(194, 223, 227, 0.75);
+}
+
+.design-row {
+	display: grid;
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.design-item {
+	margin-bottom: 20px;
+	padding: 20px 20px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+}
+
+/* Different widths for image within grid */
+.series {
+	width: 100%;
+}
+
+.wide {
+	width: 49%;
+}
+
+.three {
+	width: 32%;
+}
+
+/* Different widths for image size within container */
+.image-box {
+  position: relative;
+  width: 100%;
+}
+
+.image-box-small {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.design-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.design-image video {
+	border-radius: 0px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.image-box:hover .overlay, .image-box-small:hover .overlay {
+  height: 100%;
+}
+
+.description {
+  color: white;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.description p {
+	font-size: 1.25vw;
+	margin: 1vw 0.5vw;
+	text-align: left;
+}
+
+#hangman p, .colormask p {
+	font-size: 1.25vw;
+}
+
+.colormask {
+ 	height: 120%;
+}
+
+.design-text {
+	margin-top: 20px;
+	padding: 10px 10px;
+	background-color: rgba(240, 240, 240, 1);
+}

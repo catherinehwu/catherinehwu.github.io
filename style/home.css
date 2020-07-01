@@ -1,0 +1,68 @@
+.home-container {
+	margin: 10px 40px;
+}
+
+.home-row2, .home-row {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.home-row2 h2, .home-row h2 {
+
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+}
+
+.home-row2 a, .home-row a {
+	height: 100%;
+	text-decoration: none;
+}
+
+.home-row2 a {
+	width: 49%;
+}
+
+.home-row a {
+	width: 100%;
+}
+
+#proj {
+	background-color: rgba(194, 223, 227, 1);
+}
+
+#proj:hover {
+	background-color: rgba(92, 107, 115,0.75);
+	color: white;
+}
+
+#art {
+	background-color: rgba(194, 223, 227, 1);
+}
+
+#art:hover {
+	background-color: rgba(92, 107, 115,0.75);
+	color: white;
+}
+
+#exp {
+	background-color: rgba(194, 223, 227, 1);
+}
+
+#exp:hover {
+	background-color: rgba(92, 107, 115,0.75);
+	color: white;
+}
+
+#course {
+	background-color: rgba(194, 223, 227, 1);
+}
+
+#course:hover {
+	background-color: rgba(92, 107, 115,0.75);
+	color: white;
+}

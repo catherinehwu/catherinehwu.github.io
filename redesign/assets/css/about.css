@@ -1,0 +1,161 @@
+@keyframes fadein {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+
+* {
+    animation: fadein 1s ease;
+}
+
+/* Heading Fonts */
+a {
+    color: inherit;
+}
+
+html {
+    font-size: 18px;
+    background-color: #FDF8F5;
+    width: 100%;
+    height: 90%;
+}
+
+h1 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* About Me Page */
+body {
+    background-color: #FFFFFF;
+    border: 8px solid #ECCCD2;
+    position: relative;
+    height: 100%;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.aboutpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* border: solid; */
+}
+
+.aboutme-col {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+    /* border: solid; */
+}
+
+.photobox {
+    width: 40%;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutphoto {
+    /* position: absolute; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* width:100%; */
+    width: 22rem;
+    height: 22rem;
+
+    background: linear-gradient(135deg, #FCF6BD, #8CBCD0);
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 1;
+}
+
+.pfpimage {
+    border-radius: 50%;
+    width: 97%;
+    height: 97%;
+
+    z-index: 1;
+}
+
+.x {
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    /* border: solid; */
+}
+
+.xcontainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.leftx {
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #ECCCD2;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all 0.4s ease-in;
+}
+
+.rightx {
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #ECCCD2;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all 0.4s ease-in;
+}
+
+.xcontainer:hover .leftx{
+    transform: rotate(-135deg);
+    background-color: #cd9aa4;
+}
+
+.xcontainer:hover .rightx{
+    transform: rotate(135deg);
+    background-color: #cd9aa4;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}

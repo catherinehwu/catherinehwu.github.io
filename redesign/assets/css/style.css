@@ -1,0 +1,254 @@
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.greengradient {
+    animation: fadein 1s ease;
+}
+
+.pinkgradient {
+    animation: fadein 1s ease 0.10s backwards;
+}
+
+.bluegradient {
+    animation: fadein 1s ease 0.20s backwards;
+}
+
+.pfpgradient {
+    animation: fadein 1s ease 0.30s backwards;
+}
+
+.smallpink {
+    animation: fadein 1s ease 0.60s backwards;
+}
+
+.smallblue {
+    animation: fadein 1s ease 0.70s backwards;
+}
+
+.tan {
+    animation: fadein 1s ease 0.80s backwards;
+}
+
+.text{
+    animation: fadein 1s ease 1s backwards;
+}
+
+
+/* Heading Fonts */
+a {
+    color: inherit;
+}
+
+html {
+    font-size: 18px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#projectHead {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/* Home Page */
+body {
+    /* position: absolute; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+    /* border: solid;
+    border-color: #91B703; */
+    background-color: #FDF8F5;
+}
+
+.home {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid; */
+}
+
+/* Projects Bubble */
+.greengradient {
+    width: 13.5rem;
+    height: 13.5rem;
+
+    background: linear-gradient(142.99deg, #DAEF89 17.16%, #91B703 85.4%);
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 4;
+
+    left: 67%;
+    top: 62%;
+
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+/* Experiences Bubble */
+.bluegradient {
+    width: 10.5rem;
+    height: 10.5rem;
+
+    background: linear-gradient(229.21deg, #C2DBE5 17.98%, #8CBCD0 71.99%);
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 3;
+
+    left: 30%;
+    top: 65%;
+
+    transform: translate(-50%, -50%);
+    transition: all 0.25s ease-in;
+}
+
+/* About Me Bubble */
+.pinkgradient {
+    width: 8.5rem;
+    height: 8.5rem;
+
+    background: linear-gradient(226.76deg, #ECCCD2 18.77%, #FFF2F2 93.35%);
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 2;
+
+    left: 72%;
+    top: 18%;
+
+    transform: translate(-50%, -50%);
+    cursor: pointer;    
+    transition: all 0.25s ease-in;
+}
+
+.pinkgradient:hover, .greengradient:hover {
+    box-shadow: 5px 5px 20px #5c5c5c;
+}
+
+.smallpink {
+    width: 5rem;
+    height: 5rem;
+
+    background: #E2AEB7;
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 0;
+
+    left: 63%;
+    top: 10%;
+
+    transform: translate(-50%, -50%); 
+}
+
+.smallblue {
+    width: 3rem;
+    height: 3rem;
+
+    background: #9FD2E7;
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 0;
+
+    left: 41%;
+    top: 77%;
+
+    transform: translate(-50%, -50%); 
+}
+
+.tan {
+    width: 13rem;
+    height: 13rem;
+
+    background: #E6DBC9;
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 0;
+
+    left: 32%;
+    top: 35%;
+
+    transform: translate(-50%, -50%);    
+}
+
+.pfpgradient {
+    width: 22rem;
+    height: 22rem;
+
+    background: linear-gradient(135deg, #FCF6BD, #8CBCD0);
+    box-shadow: 5px 5px 20px #A4A4A4;
+    z-index: 1;
+
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pfpimage {
+    border-radius: 50%;
+    width: 97%;
+    height: 97%;
+
+    z-index: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    top: 94%;
+    translate: transformY(-50%);
+    /* border: solid; */
+}
+
+.text h1, .text h4 {
+    z-index: 10;
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.text h4 {
+    margin-top: 2px;
+}
+

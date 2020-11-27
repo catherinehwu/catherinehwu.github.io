@@ -1,0 +1,324 @@
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+* {
+    animation: fadein 0.75s ease;
+}
+
+/* Heading Fonts */
+html {
+    font-size: 18px;
+    background-color: #FDF8F5;
+    width: 100%;
+    height: 90%;
+
+    min-width: 1200px;
+    min-height: 500px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+
+    padding: 8px 0;
+    margin: 0 0;
+    /* border: solid thistle; */
+}
+
+h2 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    /* font-size: 18px; */
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+h4 {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+
+    padding: 2px 0;
+    padding-bottom: 6px;
+    margin: 0 0;
+}
+
+p {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+body {
+    background-color: #FFFFFF;
+    border: 8px solid #CCE07F;
+    position: relative;
+    height: 100%;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleinf {
+    /* border: solid black; */
+}
+
+.projectpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Debugging */
+    /* border: solid;
+    border-color: bisque; */
+
+}
+
+.projectdisplay {
+    width: 100%;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: center;
+
+    /* Debugging */
+    /* border: solid;
+    border-color: black; */
+
+}
+
+.projectcol {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Debugging */
+    /* border: solid;
+    border-color: blue; */
+}
+
+.outsidechat {
+    background-image: url("../img/topleftchat.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+
+.projectbox {
+    margin: 1vh 0;
+    position: relative;
+    /* height: 50%; */
+
+    /* Testing Alt */
+    /* margin-left: 5%; */
+
+    /* background-image: url("../img/topleftchat.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 65% 0%; */
+    /* background-clip: border-box; */
+    z-index: 1;
+    /* background-image: url("../img/topleftchat.png"); */
+    
+    /* Debugging */
+    /* border: dashed;
+    border-color: greenyellow; */
+}
+
+.chatarrow {
+    /* position: absolute; */
+    /* transform: translateY(100px); */
+    width: 83%;
+    /* width: 90%; */
+    /* height: 100%; */
+    z-index: 0;
+    /* width: 27%;
+    height: 25%; */
+    /* height problems when move around */
+    /* border: solid; */
+    filter: drop-shadow(5px 5px 10px #A4A4A4);
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chatright {
+    width: 85%;
+}
+
+.projectinfo {
+    text-align: center;
+    
+    /* Chatbox */
+    position: absolute;
+    width: 75%;
+    height: 90%;
+    overflow: hidden;
+    /* top: 10%; */
+    /* left: 45%; */
+    /* transform: translateX(-50%); */
+
+    /* Debugging */
+    /* border: dashed;
+    border-color: purple; */
+    z-index: 2;
+}
+
+.projectinfo:hover {
+    cursor: pointer;
+}
+
+.image {
+    /* height: 10vw; */
+    /* width: inherit; */
+    width: 80%;
+    border-radius: 5%;
+    /* Debugging */
+    /* border: dashed;
+    border-color: pink; */
+    display: inline;
+    z-index: 2;
+}
+
+.blurb {
+    display: none;
+    z-index: 2;
+    text-align: left;
+    padding: 0px 15px;
+    line-height: 1.2;
+}
+
+/* Skills Column */
+.skills-more {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: drop-shadow(0px 5px 10px #A4A4A4);
+
+    /* Debugging */
+    /* border: dashed;
+    border-color: orange; */
+}
+
+.skillbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #AAC83A;
+    filter: drop-shadow(0px 2px 10px #A4A4A4);
+
+    /* padding: 1rem 0; */
+    padding: 8px 0;
+
+    /* Debugging */
+    /* border: dashed;
+    border-color: black; */
+}
+
+.skillitem {
+    width: 70%;
+    background-color: #FBFBFB;
+    border-radius: 20px;
+    padding: 0.4rem 0;
+    margin: 0.5rem 0;
+    transition: background-color 0.4s linear;
+
+    /* Debugging */
+    /* border: dashed;
+    border-color: pink; */
+}
+
+.skillitem-dark {
+    width: 70%;
+    background-color: #6A7C26;
+    /* border: 3px solid #000000; */
+    box-shadow: inset 0px 0px 0px 3px #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0.4rem 0;
+    margin: 0.5rem 0;
+
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.more {
+    background: #DFEDAA;
+    border-radius: 20px;
+    padding: 0.4rem 0;
+    margin: 1rem 0;
+}
+
+.x {
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    /* border: solid; */
+}
+
+.xcontainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.leftx {
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #CCE07F;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all 0.4s ease-in;
+}
+
+.rightx {
+    height: 5px;
+    width: 50px;
+    position: absolute;
+    background-color: #CCE07F;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all 0.4s ease-in;
+}
+
+.xcontainer:hover .leftx{
+    transform: rotate(-135deg);
+    background-color: #89b65c;
+}
+
+.xcontainer:hover .rightx{
+    transform: rotate(135deg);
+    background-color: #89b65c;
+}

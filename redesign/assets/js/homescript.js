@@ -1,5 +1,5 @@
 new TypeIt("#whoami", {
-    strings: ["UC Berkeley EECS Student", "Programmer","Artist", "Innovator"],
+    strings: ["UC Berkeley EECS Student", "AWE External Vice President", "SWE++ Co-Chair", "Programmer", "Artist", "Innovator"],
     nextStringDelay: [1750, 1000],
     breakLines: false,
     speed: 100,

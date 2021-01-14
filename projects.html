@@ -1,193 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Catherine Hwu</title>
-		<link rel="stylesheet" type="text/css" href="./style/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="./style/general.css"/>
-		<link rel="stylesheet" type="text/css" href="./style/projects.css"/>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-	<body>
-		<nav>
-			<ul>
-				<a href="./index.html"><li>New Site</li></a>
-				<a href="./oldindex.html"><li>Home</li></a>
-				<a href="./oldprojects.html"><li>Projects</li></a>
-				<a href="./olddesign.html"><li>Art & Design</li></a>
-				<a href="./oldexperience.html"><li>Experience</li></a>
-				<a href="./oldcoursework.html"><li>Coursework</li></a>
-				<a href="./oldcontact.html"><li>Contact</li></a>
-				<li class="logo">Catherine Hwu</li>
-			</ul>
-		</nav>
-		
-		<main>
-			<div class="buffer">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</div>	
-			<header class="geometric banner">
-				<h1>Projects</h1>
-			</header>
-			<div class="project-container">
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">		
-								<img src="./assets/projects/heroDemo.gif">
-							</div>
-							<div class="project-back">
-								<p>Hygiene Heroes creates a variety of board games in order to educate children in developing countries about various hygiene routines, such as washing hands or brushing teeth, in a fun and interactive way. This program allows designers to easily create a variety of board games through with a spreadsheet as the configuration file. The program creates a digital version of the designer's board game with highly customizable attributes, including the board game image, token pieces, and the actions associated with each square on the board.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Hygiene Heroes Game Engine</h3>
-						<h4>Java, LibGDX</h4>
-					</div>
-				</div>
 
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/awebotDemo2.gif">
-							</div>
-							<div class="project-back">
-								<p>This Slack Bot helps UC Berkeley Association of Women in EE&CS track member attendance and collect member feedback through Slack. The slash commands supported by this bot makes event checkins and feedback collection more efficient and convenient. Not only that, this bot improves the accessibility and readibility of member and event statistics. All data collected by the bot over Slack is directly written to a Google Spreadsheet through a Google Scripts Web Application.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>AWEbot - Slack Bot for AWE</h3>
-						<h4>Slack API, NodeJS, Google Script, HTML</h4>
-					</div>
-				</div>
+    <title>Catherine Hwu - Projects</title>
+</head>
+<body>
+    <!-- Projects Page -->
+    <!-- Outside Border Box (could just be body elem) -->
+    <!-- Fixed Position X -->
+    <!-- <div class="x">
+        <a href="index.html">
+        <div class="xcontainer">
+            <div class="leftx"></div>
+            <div class="rightx"></div>
+        </div>
+        </a>
+    </div> -->
+    
+    <!-- Flex Box with 2 ROWS -->
+    <div class="projectpage">
+        <div class="x">
+            <a href="index.html">
+            <div class="xcontainer">
+                <div class="leftx"></div>
+                <div class="rightx"></div>
+            </div>
+            </a>
+        </div>
 
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/webdev.png">
-							</div>
-							<div class="project-back">
-								<p>This website, coded with HTML and CSS, illustrates my professional and academic journey. It also highlights my experiences and past works.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Personal Website</h3>
-						<h4>HTML, CSS</h4>
-					</div>
-				</div>
+        <!-- Row 1: Information Text -->
+        <div class="titleinf"> 
+            <!-- Header for Projects with Description -->
+            <h1>Projects</h1>
+            <!-- <h4>Click on a project to learn more!</h4> -->
+        </div>
 
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/git.png">
-							</div>
-							<div class="project-back">
-								<p>Gitlet is a mini version control system that mimics the functionality of the version control system Git. Gitlet uses SHA1 hashcodes, file persistence, serialization, various data structures, and graph traversals to store and track the contents of files and all of their past versions. Gitlet supports many of Git's common commands, such as init, add, commit, status, log, branch, merge, checkout, reset, and remove.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Gitlet</h3>
-						<h4>Java</h4>
-						<p>Source Code Available Upon Request</p>
-					</div>
-				</div>
+        <!-- Row 2: Visuals -->
+        <!-- Flex Box with 3 Columns -->
+        <div class="projectdisplay">
+            <!-- Column 1 (2 projects) -->
+            <div class="projectcol">
+                <!-- <img class="chatarrow topleft" src="assets/img/topleftchat.png" alt=""> -->
+                <div class="projectbox">
+                    <!-- <img class="chatarrow" src="assets/img/topleftchat.png" alt=""> -->
+                    <!-- <h2>Name of Project</h2> -->
+                    <div class="projectinfo" id="game-engine">
+                        <h2>Hygiene Heroes Game Engine</h2>
+                        <img class="image" src="assets/img/hero.png" alt="">
+                        <p class="blurb">This program allows Hygiene Heroes' designers to easily create a highly customizable educational board games with just a spreadsheet as the configuration file. The board game image, token pieces, and the actions associated with each square on the board can all be specified to relate to the hygiene topic of a game.</p>
+                    </div>
+                    <img class="chatarrow" src="assets/img/chattl.png" alt="">
+                </div>
+                
+                <div class="projectbox">
+                    <div class="projectinfo" id="awebot">
+                        <h2>Slack Bot for AWE Workspace</h2>
+                        <img class="image" src="assets/img/awebot.png" alt="">
+                        <p class="blurb">This Slack Bot helps the club track member attendance and collect feedback through the use of Slack slash commands. The bot also improves the accessibility and readibility of member and event statistics by writing data directly to a Google Spreadsheet via a Google Scripts Web Application.</p>
+                    </div>
+                    <img class="chatarrow" src="assets/img/chatbl.png" alt="">
+                </div>
 
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/sixteen.jpg">
-							</div>
-							<div class="project-back">
-								<p>SIXT33N is a voice-controlled robot car. The front-end of the car consists of a mic-board connected to filtering circuit. After filtering the signal from the mic-board with a high pass filter, the signal is sent to a TI Launchpad. The Launchpad uses Principal Component Analysis and Singular Value Decomposition to classify the signal. If the signal matches one of the preset commands, the car will drive as instructed (straight, left, or right). Closed-loop feedback and linearized models are also used to ensure that the car drives straight.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>SIXT33N Robot Car</h3>
-						<h4>TI Launchpad, Circuits, Python, C</h4>
-						<p>Source Code Available Upon Request</p>
-					</div>
-				</div>
+            </div>
+            <!-- Column 2 (Skills & See More) -->
+            <div class="skills-more">
+                <!-- Flex Box with Rows for Skills -->
+                <div class="skillbox">
+                    <h3 class="skillitem awebot personal-site" id="html">HTML</h3>
+                    <h3 class="skillitem personal-site" id="css">CSS</h3>
+                    <h3 class="skillitem game-engine gitlet" id="java">Java</h3>
+                    <h3 class="skillitem gitlet" id="python">Python</h3>
+                    <h3 class="skillitem awebot personal-site" id="js">Javscript & NodeJS</h3>
+                    <h3 class="skillitem game-engine awebot gitlet" id="git">Git & GitHub</h3>
+                    <h3 class="skillitem game-engine awebot" id="api">Libraries & APIs</h3>
+                </div>
 
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/connect4.jpg">
-							</div>
-							<div class="project-back">
-								<p>This project is a simulation for a popular game, Connect Four. The game is presented in an interactive manner with GUI displays and buttons. The game supports both single player vs. AI and a multiplayer option. The AI computer player uses a strategy based on the minimax algorithm. The AI computer player also uses a heuristic, consisting of  numeric calculations that quantify a board's potential for both offense and defense, to select its next move.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Connect Four</h3>
-						<h4>Java</h4>
-					</div>
-				</div>
-
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/loa.png">
-							</div>
-							<div class="project-back">
-								<p>Lines of Action (LOA) is a checker like board game invented by Claude Soucie. My implementation of LOA features GUI components and an AI player. The program uses game trees, the minimax algorithm, and alpha-beta pruning to select the best move for the AI Computer Player. My implementation also features a heuristic function that evaluates the strength of a given board state for either player based on group sizes and proximity.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Lines of Action (LOA)</h3>
-						<h4>Java</h4>
-						<p>Source Code Available Upon Request</p>
-					</div>
-				</div>	
-
-				<div class="project-box">
-					<div class="project-flip">
-						<div class="project-inner">
-							<div class="project-front">
-								<img src="./assets/projects/enigma2.jpg">
-							</div>
-							<div class="project-back">
-								<p>Enigma is a model of the Enigma Machines used by Germany in World War II for military communications. This program uses object-oriented programming to model the various electrical and mechanical components of a real Enigma machine: rotors, reflectors, pawls, notches, plugboard, and notches. This program parses a configuration file with Regex to set up an Enigma Machine model with the specified rotors, reflectors, notches, permutations, alphabet, and plugboard connections. Then, it scans an input text file and writes the corresponding encryption into an output file.</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-text">
-						<h3>Enigma</h3>
-						<h4>Java</h4>
-						<p>Source Code Available Upon Request</p>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer>
-			<p>Feel free to get in touch with me!</p>
-			<div class="contactinfo">
-				<a href="https://www.linkedin.com/in/catherinehwu/" target="_blank"><img src="./assets/footer/linkedin.png" alt="LinkedIn"></a>
-				<a href="https://github.com/catherinehwu" target="_blank"><img src="./assets/footer/github.png" alt="Github"></a>
-				<a href="mailto:hwu.catherine@berkeley.edu"><img src="./assets/footer/email.png" alt="Email"></a>
-				<a href="./assets/catherinehwu.pdf" target="_blank"><img src="./assets/footer/resume.png" alt="Resume"></a>
-			</div>
-			<p class="mark">© Catherine Hwu 2020</p>
-		</footer>
-	</body>
+                <a href="oldprojects.html"><h3 class="more">See More</h3></a>
+            </div>
+            
+            <!-- Column 3 (2 projects) -->
+            <div class="projectcol">
+                
+                <div class="projectbox right">
+                    <div class="projectinfo" id="personal-site">
+                        <h2>Personal Website</h2>
+                        <img class="image" src="assets/img/personal.png" alt="">
+                        <p class="blurb">This website is built with HTML, CSS, and Javascript. It highlights my experiences and skills, all while showcasing aspects of my personality.</p>
+                    </div>
+                    <img class="chatarrow chatright" src="assets/img/chattr.png" alt="">
+                </div>
+                
+                <div class="projectbox right">
+                    <div class="projectinfo" id="gitlet">
+                        <h2>Gitlet (Version Control System)</h2>
+                        <img class="image" src="assets/img/gitlet.png" alt="">
+                        <p class="blurb">Gitlet is a mini version control system that mimics the functionality of the version control system Git. Gitlet uses SHA1 hashcodes, file persistence, serialization, various data structures, and graph traversals to store and track the contents of files and all of their past versions.</p>
+                    </div>
+                    <img class="chatarrow chatright" src="assets/img/chatbr.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/projectscript.js"></script>
+</body>
 </html>

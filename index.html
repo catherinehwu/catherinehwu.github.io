@@ -1,99 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Catherine Hwu">
-		<meta name="keywords" content="Hwu, Catherine">
-		<meta name="description" content>
-		<meta property="og:title" content="Catherine Hwu">
-		<meta property="og:type" content="Website">
-		<meta property="og:url" content="https://catherinehwu.github.io/">
-		<title>Catherine Hwu</title>
-		<link rel="stylesheet" type="text/css" href="./style/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="./style/general.css"/>
-		<link rel="stylesheet" type="text/css" href="./style/home.css"/>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-	<body>
-		<nav>
-			<ul>
-				<a href="./index.html"><li>New Site</li></a>
-				<a href="./oldindex.html"><li>Home</li></a>
-				<a href="./oldprojects.html"><li>Projects</li></a>
-				<a href="./olddesign.html"><li>Art & Design</li></a>
-				<a href="./oldexperience.html"><li>Experience</li></a>
-				<a href="./oldcoursework.html"><li>Coursework</li></a>
-				<a href="./oldcontact.html"><li>Contact</li></a>
-				<li class="logo">Catherine Hwu</li>
-			</ul>
-		</nav>
-		
-		<main>	
-			<div class="buffer">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</div>
-			<header class="star banner">
-				<h1>Catherine Hwu</h1>
-			</header>	
-			<div class="about">
-				<div class="about-section">
-					<img id="profile" src="./assets/contact/profilePic.jpg" alt="Profile Picture">
-					<div class="blurb">
-						<h2>About Me</h2>
-						<br>
-						<p>
-							Hey! I'm Catherine Hwu, a current sophomore studying Electrical Engineering and Computer Science at UC Berkeley. I'm interested in the intersection between technology, business, and design. In my free time, I like to run, hike, and experiment with art or photography. I also enjoy volunteering, especially when it involves working with children!
-						</p>
-						<br>
-						<div class="contactinfo">
-							<a href="https://www.linkedin.com/in/catherinehwu/" target="_blank"><img src="./assets/footer/linkedin.png" alt="LinkedIn"></a>
-							<a href="https://github.com/catherinehwu" target="_blank"><img src="./assets/footer/github.png" alt="Github"></a>
-							<a href="mailto:hwu.catherine@berkeley.edu"><img src="./assets/footer/email.png" alt="Email"></a>
-							<a href="./assets/catherinehwu.pdf" target="_blank"><img src="./assets/footer/resume.png" alt="Resume"></a>
-						</div>
-					</div>
-				</div>	
-			</div>
+        <title>Catherine Hwu</title>
+    </head>
+    
+    <body>
+        <!-- Home Page -->
+        <div class="home">
+            <!-- Profile Picture -->
+            <div class="circle pfpgradient">
+                <img src="assets/img/catherinehwu.jpg" alt="" class="pfpimage">
+            </div>
+            <a href="oldexperience.html"><h2 class="circle bluegradient">Experiences & Old Website</h2></a>
+            <a href="projects.html"><p class="circle greengradient" id="projectHead">Projects</p></a>
+            <a href="about.html"><h4 class="circle pinkgradient">About Me</h4></a>
+            <!-- Other Circles -->
+            <div class="circle smallpink"></div>
+            <div class="circle smallblue"></div>
+            <div class="circle tan"></div>
+            <!-- Text & Description -->
+            <div class="text">
+                <h1>Catherine Hwu</h1>
+                <h4 id="whoami"></h4>
+                <!-- <h4 id="whoami">UC Berkeley EECS Student | Programmer | Artist | Innovator</h4> -->
+            </div>
+        </div>
 
-			<div class="home-container">
-			<div class="home-row2">
-				<a href="./projects.html">
-					<h2 id="proj">Projects</h2>
-				</a>
-				<a href="./design.html">
-					<h2 id="art">Art & Design</h2>
-				</a>
-			</div>
-			<div class="home-row">
-				<a href="./experience.html">
-				<h2 id="exp">Experience</h2>
-				</a>
-			</div>
-			<div class="home-row">
-				<a href="./coursework.html">
-					<h2 id="course">Coursework</h2>
-				</a>
-			</div>
-			</div>
-		</main>
-
-		<footer>
-			<p>Feel free to get in touch with me!</p>
-			<div class="contactinfo">
-				<a href="https://www.linkedin.com/in/catherinehwu/" target="_blank"><img src="./assets/footer/linkedin.png" alt="LinkedIn"></a>
-				<a href="https://github.com/catherinehwu" target="_blank"><img src="./assets/footer/github.png" alt="Github"></a>
-				<a href="mailto:hwu.catherine@berkeley.edu"><img src="./assets/footer/email.png" alt="Email"></a>
-				<a href="./assets/catherinehwu.pdf" target="_blank"><img src="./assets/footer/resume.png" alt="Resume"></a>
-			</div>
-			<p class="mark">© Catherine Hwu 2020</p>
-		</footer>
-	</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+        <script src="assets/js/homescript.js"></script>
+    </body>
 </html>
